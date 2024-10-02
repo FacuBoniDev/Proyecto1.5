@@ -85,11 +85,11 @@ main{
 }
 
 .SanMartin{
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     margin-right: 30px;
     border: 2px solid rgb(226, 61, 88);
-    border-radius: 15px; 
+    border-radius: 25px; 
 }
 
 .SanMartin:hover{
