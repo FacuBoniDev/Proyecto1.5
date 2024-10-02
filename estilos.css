@@ -5,6 +5,8 @@
 }
 
 body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
     background-color: #0e141b;
     color:rgb(233, 223, 210);
     margin: 1.2rem;
@@ -62,10 +64,12 @@ a{
 }
 
 .nombrefoto{
+    font-family:"Sixtyfour Convergence", sans-serif;
     padding-right: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-size: 1.2rem;
 }
 
 .nombrefoto:hover{
@@ -112,7 +116,8 @@ main{
 }
 
 small{
-    font-size: 1.35rem;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.2rem;
     color:rgba(226, 61, 88, 0.623);
     padding-left: 2px;
 }
@@ -168,7 +173,7 @@ h2{
 }
 
 .descripcion{
-    padding-bottom: 12rem;
+    padding-bottom: 11rem;
     margin-left: 2.3rem;
     font-size: 1.2rem;
     white-space: pre-line;
