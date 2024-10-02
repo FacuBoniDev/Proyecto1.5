@@ -1,0 +1,308 @@
+.FotosSocials{
+    width: 40px;
+    height: 40px;
+    padding-right: 60px;
+}
+
+body{
+    background-color: #0e141b;
+    color:rgb(233, 223, 210);
+    margin: 1.2rem;
+}
+
+header{
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -0.6rem;
+}
+
+.paginas{
+    list-style-type: none;
+    display: flex;
+}
+
+.paginas li{
+    padding-right: 35px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.paginas li:hover{
+    text-decoration: underline;
+    text-decoration-color:rgb(226, 61, 89) ;
+}
+
+.paginas li:active{
+    color:rgb(226, 61, 89)
+}
+
+.paginas li:visited
+.paginas li:focus{
+    text-decoration: none;
+    color:inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nombrefoto{
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nombrefoto:hover{
+    color:rgb(226, 61, 88);
+    cursor: default;
+}
+
+main{
+    padding-top: 80px;
+    font-size: 2.4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.SanMartin{
+    height: 60px;
+    width: 60px;
+    margin-right: 30px;
+    border: 2px solid rgb(226, 61, 88);
+    border-radius: 15px; 
+}
+
+.SanMartin:hover{
+    transition:all .5s ease-in-out;
+    border-radius:50%;
+    box-shadow: 0px 0px 10px 10px rgb(226, 61, 88);
+    transform: rotate(360deg);
+    }
+
+.Copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SocialsList{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.TextoFooter{
+    padding-right: 20px;
+}
+
+small{
+    font-size: 1.35rem;
+    color:rgba(226, 61, 88, 0.623);
+    padding-left: 2px;
+}
+
+small:hover{
+    color: rgb(226, 61, 88);
+}
+
+
+.developer{
+    color: rgb(33, 212, 212);
+}
+
+.siguiente{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5rem;  
+    transition: transform 0.1 ease;
+    margin-right: 120px;
+    margin-left: 1600px;
+    cursor:pointer;
+    width: 50%;
+    float: right;
+}
+
+.siguiente p{
+    color:rgb(226, 61, 89);
+}
+
+.siguiente:hover{
+    transform: scale(1.2);
+}
+
+.FotoSiguiente{
+    width: 50px;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.Especializado{
+    color:rgb(41, 118, 185)
+}
+
+h1{
+    font-size: 6rem;
+    margin-top: 0;
+    padding-bottom: -1rem;
+}
+
+h2{
+    margin-top: -0.5rem;
+}
+
+.descripcion{
+    padding-bottom: 12rem;
+    margin-left: 2.3rem;
+    font-size: 1.2rem;
+    white-space: pre-line;
+    color:rgb(188, 192, 192)
+}
+
+.TituloProyectos{
+    margin-bottom: -0.2rem;
+    margin-top: -4.5rem;
+    font-size: 4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.ContenedorGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 70px;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 4rem;
+    }
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card:hover svg {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.SiguienteContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    right: 0;
+    position:absolute;
+    top: 80%;
+}
+
+.volver{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;  
+    transition: transform 0.1 ease;
+    margin-right: 1600px;
+    margin-left: 120px;
+    cursor:pointer
+}
+
+.volver p{
+    color:rgb(226, 61, 89);
+}
+
+.volver:hover{
+    transform: scale(1.2);
+}
+
+.FotoVolver{
+    width: 50px;
+    height: 50px;
+    padding-left: 15px;
+    transform: rotate(180deg);
+}
+
+.VolverContainter{
+    position:absolute;
+    top: 80%;
+}
+
+.botones{
+    display: inline-block;
+}
