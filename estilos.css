@@ -77,6 +77,50 @@ a{
     cursor: default;
 }
 
+header p{
+    transition: all .2s ease-in-out;
+}
+
+header p:hover{
+    animation: rotacion .3s ease-in-out forwards;
+}
+
+@keyframes rotacion{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(-3deg);
+    }
+    20%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(3deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-3deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    70%{
+        transform: rotate(3deg);
+    }
+    80%{
+        transform: rotate(0deg);
+    }
+    90%{
+        transform: rotate(-3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
 main{
     padding-top: 80px;
     font-size: 2.4rem;
@@ -96,13 +140,20 @@ main{
     transition:all .5s ease-in-out;
     border-radius:50%;
     box-shadow: 0px 0px 10px 10px rgb(226, 61, 88);
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
     }
 
 .Copyright{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.CopyProyectos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.6rem;
 }
 
 .SocialsList{
@@ -310,4 +361,26 @@ h2{
 
 .botones{
     display: inline-block;
+}
+
+.TituloSobreMi{
+    font-size: 3rem;
+    margin-bottom: -1rem;
+    margin-top: -1.5rem;
+}
+
+.TextoSobreMi{
+    font-size: 1.1rem;
+    white-space: pre-line;
+    line-height: 2;
+    color:rgb(224, 224, 216);
+}
+
+.StrongTexto{
+    color:rgb(41, 118, 185);
+}
+
+.FinTexto{
+    font-size: 1.3rem;
+    color: rgb(33, 212, 212);
 }
