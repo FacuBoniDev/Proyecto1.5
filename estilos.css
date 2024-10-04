@@ -15,8 +15,8 @@ body{
 header{
     padding-right: 40px;
     padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     font-size: 1.5rem;
@@ -32,30 +32,34 @@ footer{
 }
 
 .paginas{
+    gap: 25px;
     list-style-type: none;
     display: flex;
+    margin-right: 40px;
 }
 
 .paginas li{
-    padding-right: 35px;
+    display: inline-block;
+    position: relative;
     cursor: pointer;
     text-decoration: none;
     color: inherit;
+    padding-block: 10px;
 }
 
-.paginas li:hover{
-    text-decoration: underline;
-    text-decoration-color:rgb(226, 61, 89) ;
+.paginas li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px; /* Grosor del subrayado */
+    width: 0; /* Comienza sin estar visible */
+    background-color: rgb(226, 61, 88); /* Color del subrayado */
+    transition: width 0.2s ease; /* Transición suave */
 }
 
-.paginas li:active{
-    color:rgb(226, 61, 89)
-}
-
-.paginas li:visited
-.paginas li:focus{
-    text-decoration: none;
-    color:inherit;
+.paginas li:hover::after {
+    width: 100%; /* Expande el subrayado hasta cubrir todo el texto */
 }
 
 a{
@@ -383,4 +387,70 @@ h2{
 .FinTexto{
     font-size: 1.3rem;
     color: rgb(33, 212, 212);
+}
+
+.cartaTecnologias {
+    margin-top: 4rem;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 6px #bebebe, -2px -2px 6px #ffffff;
+    ;
+}
+
+.bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 290px;
+    height: 190px;
+    z-index: 2;
+    background: #030608;
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+}
+
+.blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(226, 61, 89);
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+    0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+
+    25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+
+    50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+
+    75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+
+    100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
 }
