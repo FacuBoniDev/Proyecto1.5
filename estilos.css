@@ -389,30 +389,40 @@ h2{
     color: rgb(33, 212, 212);
 }
 
+.tituloTecnologias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 6rem;
+    font-size: 1.5rem;
+}
+
 .cartaTecnologias {
-    margin-top: 4rem;
+    margin-top: 0.5rem;
     position: relative;
-    width: 300px;
-    height: 200px;
+    left:50%;
+    transform: translate(-50%, 0);
+    width: 670px;
+    height: 140px;
     border-radius: 14px;
     z-index: 1111;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 2px 6px #bebebe, -2px -2px 6px #ffffff;
+    box-shadow: 2px 2px 6px #bebebeb7, -2px -2px 6px #ffffffb2;
     ;
 }
 
 .bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 5px;
     left: 5px;
-    width: 290px;
-    height: 190px;
+    width: 660px;
+    height: 130px;
     z-index: 2;
-    background: #030608;
+    background: #0e141b;
     backdrop-filter: blur(24px);
     border-radius: 10px;
     overflow: hidden;
@@ -424,12 +434,12 @@ h2{
     z-index: 1;
     top: 50%;
     left: 50%;
-    width: 150px;
-    height: 150px;
+    width: 350px;
+    height: 100px;
     border-radius: 50%;
     background-color: rgb(226, 61, 89);
     opacity: 1;
-    filter: blur(12px);
+    filter: blur(10px);
     animation: blob-bounce 5s infinite ease;
 }
 
@@ -453,4 +463,62 @@ h2{
     100% {
     transform: translate(-100%, -100%) translate3d(0, 0, 0);
     }
+}
+
+
+
+
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+  }
+  
+  .carruselItems {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 30px 0px;
+    gap:20px;
+  }
+  
+  .carruselItem {
+    min-width: 100px;
+    max-width: 100px;
+    height: 100px;
+    cursor: pointer;    
+  }
+  
+  .carruselItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  
+  .carruselItem:hover {
+    transform: scale(1.2);
+  }
+  
+  
+  .superCointainer{
+    width:700px;
+    background-color: red;
+  }
+
+.containerSobreMi{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fotoSobreMi img{
+    border: 5px solid rgb(226, 61, 89);
+    border-radius: 100%;
+    margin-right: 6rem;
+}
+
+.fotoSobreMi img:hover{
+    transform: scale(1.05);
 }
