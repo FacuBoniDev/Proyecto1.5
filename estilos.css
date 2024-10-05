@@ -151,6 +151,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 6.2rem;
 }
 
 .CopyProyectos{
@@ -158,6 +159,20 @@ main{
     align-items: center;
     justify-content: center;
     margin-top: 3.6rem;
+}
+
+.CopySobreMi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.CopyContacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
 }
 
 .SocialsList{
@@ -394,7 +409,7 @@ h2{
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
-    margin-top: 6rem;
+    margin-top: 4rem;
     font-size: 1.5rem;
 }
 
@@ -528,31 +543,39 @@ h2{
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .gridContacto1 {
-    margin-top: 8rem;
-    margin-left: 2rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(3, max-content);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    border: 10px solid black;
-    width: 504px;
+    justify-content: start;
+    width: 454px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+    color: royalblue;
+    font-size: 18px;
+    font-weight: 600;
+    align-self: center;
 }
     
 .miMail {
-    height: 120px;
-    width: 500px;
+    min-height: 100px;
+    min-width: 450px;
     background-color: none;
     grid-area: 1 / 1 / 2 / 3;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 22px;
-    border: 2px solid white
+    border: 1px solid rgb(219, 213, 213);
+    border-radius: 8px;
+
 }
 .miMail img{
     height: 40px;
@@ -562,6 +585,14 @@ h2{
 
 .miGithub {
     grid-area: 2 / 1 / 3 / 2;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid rgb(219, 213, 213);
+    border-radius: 8px;
+
 }
 
 .miGithub img{
@@ -571,6 +602,17 @@ h2{
 
 .miLinkedIn { 
     grid-area: 2 / 2 / 3 / 3; 
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid rgb(219, 213, 213);
+    border-radius: 8px;
+}
+
+.miGithub:hover , .miLinkedIn:hover{
+    background-color: #cac9c9;
 }
 
 .miLinkedIn img{
@@ -578,12 +620,140 @@ h2{
     width: 30px;
 }
 
+.descargaCV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: 3 / 1 / 4 / 3;
+    border: 1px solid rgb(219, 213, 213);
+    border-radius: 8px;
+    min-height: 100px;
+    min-width: 450px;
+}
 
 
 
 
 
 
+.botonCV {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: royalblue;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    /* margin-bottom: 20px; */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .botonCV::before,
+  .botonCV::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .botonCV::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .botonCV::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .botonCV:active,
+  .botonCV:focus {
+    outline: none;
+  }
+  
+  .botonCV:active::before,
+  .botonCV:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .botonCV:active::before {
+    top: 3px;
+  }
+  
+  .botonCV:active::after {
+    bottom: 3px;
+  }
+  
+  .botonCV_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: royalblue;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .botonCV_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: royalblue;
+  }
+  
+  .botonCV_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: royalblue;
+    transition: all .2s ease;
+  }
+  
+  .botonCV_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .botonCV_text {
+    position: relative;
+  }
+  
+  .botonCV:hover {
+    color: royalblue;
+  }
+  
+  .botonCV:hover .botonCV_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .botonCV:hover .botonCV_lg::after {
+    background-color: #fff;
+  }
 
 
 .copyLink {
@@ -679,4 +849,88 @@ h2{
         110% 10%;
       background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
     }
+  }
+
+
+
+.estructuraContacto{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 2rem;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  }
+  
+  .form .title {
+    color: royalblue;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form .inputNombre {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 85%;
+    height: 40px;
+  }
+  
+  .form .inputApellido {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 85%;
+    height: 40px;
+  }
+
+  .form .inputMail {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 85%;
+    height: 40px;
+  }
+
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 85%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form button {
+    align-self: center;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
   }

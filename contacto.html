@@ -32,23 +32,45 @@
             </ul>
         </div>
     </header>
-
+<main>
     <h2 class="trabajemosJuntos">Trabajemos juntos!</h2>
-    <div class="gridContacto1">
-        <div class="miMail">
-            <img src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-2981844-2476484.png?f=webp&w=256">
-            <p id="emailText">facuboni03@gmail.com</p>
-            <button class="copyLink" id="copyButton">Copy</button>
-        </div>
-        <div class="miGithub">
-            <img src="img\github-icon-2.svg">
-        </div>
-        <div class="miLinkedIn">
-            <img src="linkedinlogo.svg">
+    <div class="estructuraContacto">
+        <div class="gridContacto1">
+            <div class="miMail">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-2981844-2476484.png?f=webp&w=256">
+                <p id="emailText">facuboni03@gmail.com</p>
+                <button class="copyLink" id="copyButton">Copy</button>
+            </div>
+            <a href="" class="miGithub">
+                <img src="img\github-icon-2.svg">
+                <p>Mi GitHub</p>
+            </a>
+            <a href="" class="miLinkedIn">
+                <img src="linkedinlogo.svg">
+                <p>Mi LinkedIn</p>
+            </a>
+            <div class="descargaCV">
+                <button class="botonCV">
+                    <span class="botonCV_lg">
+                        <span class="botonCV_sl"></span>
+                        <span class="botonCV_text">Descarga CV</span>
+                    </span>
+                </button>
+            </div>
         </div>
 
+        <div>
+            <form class="form">
+                <div class="title">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</div>
+                <input type="text" placeholder="Nombre" class="inputNombre">
+                <input type="text" placeholder="Apellido" class="inputApellido">
+                <input type="text" placeholder="Mail" class="inputMail">
+                <textarea placeholder="Deja un mensaje"></textarea>
+                <button>Enviar</button>
+            </form>
+        </div>
     </div>
-
+</main>
 
 
 
@@ -64,6 +86,8 @@
         </a>
     </div>
 </div> 
+
+<p class="CopyContacto">© Copyright Facundo Bonicalzi 2024</p>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
