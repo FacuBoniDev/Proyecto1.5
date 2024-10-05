@@ -33,6 +33,28 @@
         </div>
     </header>
 
+    <h2 class="trabajemosJuntos">Trabajemos juntos!</h2>
+    <div class="gridContacto1">
+        <div class="miMail">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-2981844-2476484.png?f=webp&w=256">
+            <p id="emailText">facuboni03@gmail.com</p>
+            <button class="copyLink" id="copyButton">Copy</button>
+        </div>
+        <div class="miGithub">
+            <img src="img\github-icon-2.svg">
+        </div>
+        <div class="miLinkedIn">
+            <img src="linkedinlogo.svg">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
 
 <div class="botones">  
     <div class="VolverContainter">
@@ -43,7 +65,21 @@
     </div>
 </div> 
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('copyButton').addEventListener('click', function() {
+    const emailText = document.getElementById('emailText').textContent;
+
+    navigator.clipboard.writeText(emailText).catch(err => {
+      console.error('Error al copiar:', err);
+    });
+  });
+});
+  </script>
+
+
 <script src="script.js"></script>
+<script scr="script2.js"></script>
 
 </body>
 
