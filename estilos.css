@@ -207,7 +207,7 @@ small:hover{
     align-items: center;
     font-size: 1.5rem;  
     transition: transform 0.1 ease;
-    margin-right: 120px;
+    margin-right: 100px;
     margin-left: 1600px;
     cursor:pointer;
     width: 50%;
@@ -341,7 +341,7 @@ h2{
 .SiguienteContainer{
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    width: 25%;
     right: 0;
     position:absolute;
     top: 80%;
@@ -354,8 +354,8 @@ h2{
     font-size: 1.5rem;  
     transition: transform 0.1 ease;
     margin-right: 1600px;
-    margin-left: 120px;
-    cursor:pointer
+    margin-left: 100px;
+    cursor:pointer;
 }
 
 .volver p{
@@ -376,6 +376,7 @@ h2{
 .VolverContainter{
     position:absolute;
     top: 80%;
+    width: 25%;
 }
 
 .botones{
@@ -531,7 +532,7 @@ h2{
 .fotoSobreMi img{
     border: 5px solid rgb(226, 61, 89);
     border-radius: 100%;
-    margin-right: 6rem;
+    margin-right: 10rem;
 }
 
 .fotoSobreMi img:hover{
@@ -852,12 +853,12 @@ h2{
   }
 
 
-
 .estructuraContacto{
     display: flex;
     justify-content: center;
     gap: 10rem;
     margin-top: 2rem;
+    align-items: center;
 }
 
 .form {

@@ -35,27 +35,29 @@
 <main>
     <h2 class="trabajemosJuntos">Trabajemos juntos!</h2>
     <div class="estructuraContacto">
-        <div class="gridContacto1">
-            <div class="miMail">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-2981844-2476484.png?f=webp&w=256">
-                <p id="emailText">facuboni03@gmail.com</p>
-                <button class="copyLink" id="copyButton">Copy</button>
-            </div>
-            <a href="" class="miGithub">
-                <img src="img\github-icon-2.svg">
-                <p>Mi GitHub</p>
-            </a>
-            <a href="" class="miLinkedIn">
-                <img src="linkedinlogo.svg">
-                <p>Mi LinkedIn</p>
-            </a>
-            <div class="descargaCV">
-                <button class="botonCV">
-                    <span class="botonCV_lg">
-                        <span class="botonCV_sl"></span>
-                        <span class="botonCV_text">Descarga CV</span>
-                    </span>
-                </button>
+        <div class="containterGrid">
+            <div class="gridContacto1">
+                <div class="miMail">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-gmail-2981844-2476484.png?f=webp&w=256">
+                    <p id="emailText">facuboni03@gmail.com</p>
+                    <button class="copyLink" id="copyButton">Copy</button>
+                </div>
+                <a href="" class="miGithub">
+                    <img src="img\github-icon-2.svg">
+                    <p>Mi GitHub</p>
+                </a>
+                <a href="" class="miLinkedIn">
+                    <img src="linkedinlogo.svg">
+                    <p>Mi LinkedIn</p>
+                </a>
+                <div class="descargaCV" id="downloadDiv">
+                    <button class="botonCV" id="downloadBtn">
+                        <span class="botonCV_lg">
+                            <span class="botonCV_sl"></span>
+                            <span class="botonCV_text">Descarga CV</span>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -102,8 +104,19 @@ document.addEventListener('DOMContentLoaded', function() {
   </script>
 
 
+<script>
+    document.getElementById('downloadBtn').addEventListener('click', function(event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado
+        // Crear un enlace dinámico
+        var link = document.createElement('a');
+        link.href = 'mi cv/CV.pdf'; // Ruta relativa a tu archivo PDF
+        link.download = 'CV_Facundo_Bonicalzi.pdf'; // Nombre del archivo descargado
+        link.click(); // Simula el clic en el enlace
+    });
+</script>
+
+
 <script src="script.js"></script>
-<script scr="script2.js"></script>
 
 </body>
 
