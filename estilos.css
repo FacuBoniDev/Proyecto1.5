@@ -551,8 +551,8 @@ h2{
     display: grid;
     grid-template-columns: repeat(2, max-content);
     grid-template-rows: repeat(3, max-content);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
     justify-content: start;
     width: 454px;
     background-color: white;
@@ -861,13 +861,18 @@ h2{
     align-items: center;
 }
 
+.containerForm{
+  display: flex;
+  justify-content: center;
+}
+
 .form {
     position: relative;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     gap: 10px;
-    width: 400px;
+    width: 454px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -890,7 +895,7 @@ h2{
     border: 1px solid rgb(219, 213, 213);
     padding: 8px 14px;
     border-radius: 8px;
-    width: 85%;
+    width: 95%;
     height: 40px;
   }
   
@@ -899,7 +904,7 @@ h2{
     border: 1px solid rgb(219, 213, 213);
     padding: 8px 14px;
     border-radius: 8px;
-    width: 85%;
+    width: 95%;
     height: 40px;
   }
 
@@ -908,14 +913,14 @@ h2{
     border: 1px solid rgb(219, 213, 213);
     padding: 8px 14px;
     border-radius: 8px;
-    width: 85%;
+    width: 95%;
     height: 40px;
   }
 
   .form textarea {
     border-radius: 8px;
-    height: 100px;
-    width: 85%;
+    height: 70px;
+    width: 95%;
     resize: none;
     outline: 0;
     padding: 8px 14px;
@@ -925,7 +930,7 @@ h2{
   
   .form button {
     align-self: center;
-    padding: 8px;
+    padding: 6px;
     outline: 0;
     border: 0;
     border-radius: 8px;
@@ -935,3 +940,19 @@ h2{
     color: #fff;
     cursor: pointer;
   }
+
+.containterGrid{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  min-height: 465px;
+}
+
+.tituloGrid{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: royalblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
